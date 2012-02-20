@@ -51,6 +51,12 @@ var hattrick = new function() {
 	}
 	
 	this.init = function() {
+		var selected = $( 'option:selected' ).val();
+		
+		if( selected != 'Category') {
+			return;
+		}
+		
 		var result = new Array();
 		var sort = new Array();
 		
